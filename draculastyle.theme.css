@@ -2,7 +2,7 @@
  * @name Dracula style
  * @description A dracula style theme for BetterDiscord
  * @author Kirby
- * @version 1.2
+ * @version 1.2.1
  * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/DiscordRecolor/
  * @BDEditor DiscordRecolor
 */
@@ -13,8 +13,8 @@
 	--accentcolor: 189,147,249; /* Purple */
 	--accentcolor2: 255,121,198; /* Pink */
 	--successcolor: 80,250,123; /* Green */
-	--warningcolor: 255,184,108; /* Orange */
-	--dangercolor: 255,85,85; /* Red */
+    	--warningcolor: 255,184,108; /* Orange */
+    	--dangercolor: 255,85,85; /* Red */
 	--linkcolor: var(--accentcolor);
 	--mentioncolor: var(--accentcolor);
 	--textbrightest: 248,248,242;
@@ -50,7 +50,36 @@
 }
 
 /* Voice channel buttons */
+.colorable_f1ceac.primaryDark_f1ceac {
+	border: 1px solid hsl(234 calc(1*4.386%) 44.706% /.06);
+}
 
+/* Voice channel button hover */
+.colorable_f1ceac.primaryDark_f1ceac.active_f1ceac:not(.disabled_f1ceac), .colorable_f1ceac.primaryDark_f1ceac:hover:not(.disabled_f1ceac) {
+    background: hsla(232, 14%, 31%, 0.6);
+}
+
+/* Voice channel button background */
+.buttonSection__1405b {
+    background-color: rgb(35,37,48);
+	border: 1px solid hsl(234 calc(1*4.386%) 44.706% /.2);
+}
+
+/* Voice channel mute button */
+.colorable_f1ceac.redGlow_f1ceac {
+    background-color: hsl(0 100% 66.67% / .1);
+	border: 1px solid hsl(0 100% 66.67% / .03);
+}
+
+/* Voice channel mute button icon */
+.colorable_f1ceac.redGlow_f1ceac, .colorable_f1ceac.redGlow_f1ceac .centerIcon_f1ceac {
+    color: rgb(255,85,85);
+}
+
+/* Channels */
+.modeSelected__2ea32 .link__2ea32, .modeSelected__2ea32:hover .link__2ea32 {
+    background: var(--bg-overlay-selected, var(--background-modifier-hover));
+}
 
 /* Find or start conversation */
 #app-mount .lookFilled__201d5.colorPrimary__201d5, #app-mount .lookFilled__201d5.colorPrimary__201d5:disabled {
@@ -125,6 +154,11 @@ button.button__67645.redGlow__67645, span.button__67645.redGlow__67645 {
 /* Friends list tabs (online/all) */
 .visual-refresh .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026, .visual-refresh .topPill_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
     background-color: var(--button-secondary-background);
+}
+
+/* Server members activity hover */
+.selected__0f2e8, .selected__0f2e8:hover {
+	background-color: var(--background-mod-normal);
 }
 
 /* Friends active now hover */
