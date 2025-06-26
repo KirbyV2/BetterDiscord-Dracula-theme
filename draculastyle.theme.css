@@ -13,8 +13,8 @@
 	--accentcolor: 189,147,249; /* Purple */
 	--accentcolor2: 255,121,198; /* Pink */
 	--successcolor: 80,250,123; /* Green */
-    --warningcolor: 255,184,108; /* Orange */
-    --dangercolor: 255,85,85; /* Red */
+	--warningcolor: 255,184,108; /* Orange */
+	--dangercolor: 255,85,85; /* Red */
 	--linkcolor: var(--accentcolor);
 	--mentioncolor: var(--accentcolor);
 	--textbrightest: 248,248,242;
