@@ -2,7 +2,7 @@
  * @name Dracula style
  * @description A dracula style theme for BetterDiscord
  * @author Kirby
- * @version 1.2.1
+ * @version 1.2.2
  * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/DiscordRecolor/
  * @BDEditor DiscordRecolor
 */
@@ -13,8 +13,8 @@
 	--accentcolor: 189,147,249; /* Purple */
 	--accentcolor2: 255,121,198; /* Pink */
 	--successcolor: 80,250,123; /* Green */
-    	--warningcolor: 255,184,108; /* Orange */
-    	--dangercolor: 255,85,85; /* Red */
+	--warningcolor: 255,184,108; /* Orange */
+	--dangercolor: 255,85,85; /* Red */
 	--linkcolor: var(--accentcolor);
 	--mentioncolor: var(--accentcolor);
 	--textbrightest: 248,248,242;
@@ -56,7 +56,7 @@
 
 /* Voice channel button hover */
 .colorable_f1ceac.primaryDark_f1ceac.active_f1ceac:not(.disabled_f1ceac), .colorable_f1ceac.primaryDark_f1ceac:hover:not(.disabled_f1ceac) {
-    	background: hsla(232, 14%, 31%, 0.6);
+	background: hsla(232, 14%, 31%, 0.6);
 }
 
 /* Voice channel button background */
@@ -67,59 +67,63 @@
 
 /* Voice channel mute button */
 .colorable_f1ceac.redGlow_f1ceac {
-    	background-color: hsl(0 100% 66.67% / .1);
+	background-color: hsl(0 100% 66.67% / .1);
 	border: 1px solid hsl(0 100% 66.67% / .03);
 }
 
 /* Voice channel mute button icon */
 .colorable_f1ceac.redGlow_f1ceac, .colorable_f1ceac.redGlow_f1ceac .centerIcon_f1ceac {
-    	color: rgb(255,85,85);
+	color: rgb(255,85,85);
 }
 
 /* Channels */
 .modeSelected__2ea32 .link__2ea32, .modeSelected__2ea32:hover .link__2ea32 {
-    	background: var(--bg-overlay-selected, var(--background-modifier-hover));
+	background: var(--bg-overlay-selected, var(--background-modifier-hover));
 }
 
 /* Find or start conversation */
 #app-mount .lookFilled__201d5.colorPrimary__201d5, #app-mount .lookFilled__201d5.colorPrimary__201d5:disabled {
-    	background-color: var(--button-secondary-background-hover);
+	background-color: var(--button-secondary-background-hover);
 	border-color: rgba(0,0,0,.0);
-    	color: rgb(248,248,242);
+	color: rgb(248,248,242);
 }
 
 /* Find or start conversation hover */
 #app-mount .lookFilled__201d5.colorPrimary__201d5:hover {
-    	background-color: rgb(189,147,249);
+	background-color: rgb(189,147,249);
 	border-color: rgba(0,0,0,.0);
-    	color: rgb(248,248,242);
+	color: rgb(248,248,242);
 }
 
 /* Find or start conversation font size/weight */
 .lookFilled__201d5 .contents__201d5, .lookLink__201d5 .contents__201d5, .lookOutlined__201d5 .contents__201d5 {
 	font-size: 95%;
-	font-weight: 550;
+	font-weight: 525;
 }
 
 /* Message reply spine */
 .repliedMessageClickableSpine_c19a55:hover {
-    	border-color: rgb(189,147,249);
+	border-color: rgb(189,147,249);
 }
 
 /* Link embed title */
 .embedTitle__623de {
-    	font-weight: 500;
+	font-weight: 500;
 }
 
 /* Msg typing border */
 .channelTextArea__74017:focus-within {
-    	border-color: rgb(189,147,249);
+	border-color: rgb(189,147,249);
+}
+
+/* Server/friend message seachbar border */
+.focused__97492 .searchBar__97492, .open__97492 .searchBar__97492 {
+	border-color: rgb(189,147,249);
 }
 
 /* Reaction bar */
 .popoverReactionHoverBar_f84418 {
 	background: rgb(35,37,48);
-	border: 2px solid var(--border-faint);
 }
 
 /* @ Mention */
@@ -131,7 +135,7 @@
 
 /* Soundboard/sharescreen etc hover */
 .visual-refresh .button_e131a9 .buttonColor_e131a9:hover, .visual-refresh .button_e131a9.buttonColor_e131a9:hover {
-    	background-color: var(--button-secondary-background-hover);
+	background-color: var(--button-secondary-background-hover);
 }
 
 /* Soundboard/sharescreen etc */
@@ -143,17 +147,17 @@
 
 /* Connected to channel icon */
 .iconBadge__650eb.isCurrentUserConnected__650eb {
-    	background-color: rgba(var(--successcolor), .7);
+	background-color: rgba(var(--successcolor), .7);
 }
 
 /* Mute/Deafen button */
 button.button__67645.redGlow__67645, span.button__67645.redGlow__67645 {
-    	background-color: hsl(0 100% 66.67% / .1);
+	background-color: hsl(0 100% 66.67% / .1);
 }
 
 /* Friends list tabs (online/all) */
 .visual-refresh .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026, .visual-refresh .topPill_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
-    	background-color: var(--button-secondary-background);
+	background-color: var(--button-secondary-background);
 }
 
 /* Server members activity hover */
@@ -163,17 +167,22 @@ button.button__67645.redGlow__67645, span.button__67645.redGlow__67645 {
 
 /* Friends active now hover */
 #app-mount .outer_bf1984.active_bf1984, #app-mount .outer_bf1984.interactive_bf1984:hover {
-    	background-color: var(--button-secondary-background-hover);
+	background-color: var(--button-secondary-background-hover);
+}
+
+/* Friends active now sharescreen background */
+.section__00943 {
+	background-color: var(--background-secondary);
 }
 
 /* Friend info boxes (mutual servers/member since) */
 .overlay_c0bea0 {
-    	background: rgb(40,42,54);
+	background: rgb(40,42,54);
 }
 
 /* Friend list game status text */
 .statusText__19b6d {
-    	color: var(--textbright);
+	color: var(--textbright);
 }
 
 /* Remove discover icon */
