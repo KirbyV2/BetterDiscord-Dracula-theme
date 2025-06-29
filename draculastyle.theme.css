@@ -2,48 +2,47 @@
  * @name Dracula style
  * @description A dracula style theme for BetterDiscord
  * @author Kirby
- * @version 1.2.2
+ * @version 1.2.3
  * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/DiscordRecolor/
- * @BDEditor DiscordRecolor
 */
 
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
 
 :root {
-	--accentcolor: 189,147,249; /* Purple */
-	--accentcolor2: 255,121,198; /* Pink */
-	--successcolor: 80,250,123; /* Green */
-	--warningcolor: 255,184,108; /* Orange */
-	--dangercolor: 255,85,85; /* Red */
-	--linkcolor: var(--accentcolor);
-	--mentioncolor: var(--accentcolor);
-	--textbrightest: 248,248,242;
-	--textbrighter: 207,207,207;
-	--textbright: 223,224,226;
-	--textdark: 155,156,163;
-	--textdarker: 109,110,119;
-	--textdarkest: 87,87,87;
-	--font: Code New Roman;
-	--backgroundaccent: 68,71,90;
-	--backgroundprimary: 35,37,48;
-	--backgroundsecondary: 40,42,54;
-	--backgroundsecondaryalt: var(--backgroundprimary);
-	--backgroundtertiary: var(--backgroundprimary);
-	--backgroundfloating: var(--backgroundaccent);
-	--settingsicons: 0;
+	--accentcolor: 189,147,249 !important; /* Purple */
+	--accentcolor2: 255,121,198 !important; /* Pink */
+	--successcolor: 80,250,123 !important; /* Green */
+	--warningcolor: 255,184,108 !important; /* Orange */
+	--dangercolor: 255,85,85 !important; /* Red */
+	--linkcolor: var(--accentcolor) !important;
+	--mentioncolor: var(--accentcolor) !important;
+	--textbrightest: 248,248,242 !important;
+	--textbrighter: 207,207,207 !important;
+	--textbright: 223,224,226 !important;
+	--textdark: 155,156,163 !important;
+	--textdarker: 109,110,119 !important;
+	--textdarkest: 87,87,87 !important;
+	--font: Code New Roman !important;
+	--backgroundaccent: 68,71,90 !important;
+	--backgroundprimary: 35,37,48 !important;
+	--backgroundsecondary: 40,42,54 !important;
+	--backgroundsecondaryalt: var(--backgroundprimary) !important;
+	--backgroundtertiary: var(--backgroundprimary) !important;
+	--backgroundfloating: var(--backgroundaccent) !important;
+	--settingsicons: 0 !important;
 }
 
 /* Default color changes */
 .theme-light:not(.custom-user-profile-theme), .theme-dark:not(.custom-user-profile-theme), .theme-amoled:not(.custom-user-profile-theme), .visual-refresh.theme-light:not(.custom-user-profile-theme), .visual-refresh.theme-dark:not(.custom-user-profile-theme), .visual-refresh.theme-amoled:not(.custom-user-profile-theme), .visual-refresh .theme-light:not(.custom-user-profile-theme), .visual-refresh .theme-dark:not(.custom-user-profile-theme), .visual-refresh .theme-amoled:not(.custom-user-profile-theme) {
 	/* Buttons */
-	--button-secondary-background: rgb(68,71,90);
-	--button-secondary-background-hover: var(--background-modifier-hover);
-	--button-secondary-background-active: var(--button-secondary-background);
-	--button-secondary-background-disabled: var(--backgroundfloating);
+	--button-secondary-background: rgb(68,71,90) !important;
+	--button-secondary-background-hover: var(--background-modifier-hover) !important;
+	--button-secondary-background-active: var(--button-secondary-background) !important;
+	--button-secondary-background-disabled: var(--backgroundfloating) !important;
 	/* Scrollbars */
-	--scrollbar-auto-thumb: var(--background-modifier-hover);
-	--scrollbar-thin-thumb: var(--background-modifier-hover);
-	--scrollbar-auto-scrollbar-color-thumb: var(--background-modifier-hover);
+	--scrollbar-auto-thumb: var(--background-modifier-hover) !important;
+	--scrollbar-thin-thumb: var(--background-modifier-hover) !important;
+	--scrollbar-auto-scrollbar-color-thumb: var(--background-modifier-hover) !important;
 	/* Reply spine
 	--spine-default: rgb(63,64,115);
 	*/
@@ -57,6 +56,7 @@
 /* Voice channel button hover */
 .colorable_f1ceac.primaryDark_f1ceac.active_f1ceac:not(.disabled_f1ceac), .colorable_f1ceac.primaryDark_f1ceac:hover:not(.disabled_f1ceac) {
 	background: hsla(232, 14%, 31%, 0.6);
+	transition: background .4s ease;
 }
 
 /* Voice channel button background */
@@ -114,11 +114,13 @@
 /* Msg typing border */
 .channelTextArea__74017:focus-within {
 	border-color: rgb(189,147,249);
+	transition: border-color .4s ease;
 }
 
-/* Server/friend message seachbar border */
+/* Server/friend message search bar border */
 .focused__97492 .searchBar__97492, .open__97492 .searchBar__97492 {
 	border-color: rgb(189,147,249);
+	transition: border-color .4s ease;
 }
 
 /* Reaction bar */
@@ -163,11 +165,13 @@ button.button__67645.redGlow__67645, span.button__67645.redGlow__67645 {
 /* Server members activity hover */
 .selected__0f2e8, .selected__0f2e8:hover {
 	background-color: var(--background-mod-normal);
+	transition: background-color .5s ease;
 }
 
 /* Friends active now hover */
 #app-mount .outer_bf1984.active_bf1984, #app-mount .outer_bf1984.interactive_bf1984:hover {
 	background-color: var(--button-secondary-background-hover);
+	transition: background-color .3s ease;
 }
 
 /* Friends active now sharescreen background */
